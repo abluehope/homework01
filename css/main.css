@@ -1,0 +1,253 @@
+.inner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#header {
+  border-bottom: 1px solid #ddd;
+}
+
+h1 {
+  text-align: left;
+  margin: 0;
+}
+
+#header .inner {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+#header .inner img {
+  width: 150px;
+}
+
+#header .gnb {
+  margin: 0 0 0 auto;
+}
+
+#header .gnb > ul {
+  display: flex;
+  gap: 40px;
+}
+
+#header .gnb > ul > li {
+  position: relative;
+}
+
+#header .gnb > ul > li > a {
+  display: block;
+  font-size: 18px;
+}
+
+#header .gnb > ul > li ~ li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 12px;
+  background: #ddd;
+}
+
+#header .btn_box {
+  margin: 0 0 0 50px;
+}
+
+#header .btn_box i {
+  margin-right: 5px;
+}
+
+#header .inner .btn_box a {
+  display: inline-block;
+  background: #031d5c;
+  color: #fff;
+  padding: 5px 14px 5px 12px;
+  border-radius: 20px;
+}
+
+.main_visual {
+  position: relative;
+}
+
+.main_visual .main_slide figure {
+  /* 텍스트 absolute에 대한 기준 */
+  position: relative;
+  height: 600px;
+}
+
+.main_visual .main_slide .itm01 {
+  background: url(../images/slide_img_01.jpg) no-repeat center center/cover;
+}
+.main_visual .main_slide .itm02 {
+  background: url(../images/slide_img_02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.main_visual .main_slide .slogan strong {
+  display: block;
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.main_visual .main_slide .slogan p {
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.main_visual .arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1400px;
+  width: 100%;
+  height: 100px;
+}
+
+.main_visual .arrows i {
+  font-size: 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.main_visual .arrows .left {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.main_visual .arrows .right {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.product {
+  padding: 100px 0;
+}
+
+.product .tit {
+  margin: 0 auto 30px auto;
+}
+
+.product .tit h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.product .tit p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.product .content {
+  display: flex;
+  gap: 30px;
+}
+
+.product .content figure {
+  flex: 1;
+  text-align: center;
+}
+
+.product .content figure .img_box {
+  margin: 0 0 20px 0;
+  background: #f0f9fa;
+  border-radius: 0px 100px 0px 100px;
+}
+
+.product .content figure strong {
+  display: block;
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.product .content figure p {
+  display: block;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.product .content figure a {
+  /* 버튼 가운데로 오게 하는거 찾기 */
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 5px 12px;
+}
+
+.product .content figure a:hover {
+  border: 1px solid #031d5c;
+  background: #031d5c;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.footer {
+  background: #031d5c;
+  color: #fff;
+  height: 100px;
+}
+
+.footer .inner {
+  display: flex;
+  width: 1200px;
+  /* margin: 0 auto; */
+}
+
+.footer .corp_item {
+  display: flex;
+  padding-top: 25px;
+}
+
+.footer .corp_item > li {
+  position: relative;
+  padding: 0 10px 0 0;
+  font-size: 12px;
+}
+
+.footer .corp_item > li ~ li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  width: 1px;
+  height: 12px;
+  background: #fff;
+}
+
+.footer .corp_item li strong {
+  font-weight: bold;
+}
+
+.footer address {
+  width: 1200px;
+  margin: auto;
+  padding: 0 0 0 15px;
+}
+
+.footer address .corp_txt {
+  padding: 10px 0 0 0;
+  font-size: 12px;
+}
